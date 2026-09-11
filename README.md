@@ -35,7 +35,7 @@
 
 Rendering is a **standard pass**. The output of any image pipeline — AI or human — is just input material. What daub adds is what the generative model can't give you: **the craft of calibrated strokes · a replayable painting process · layered files you can keep editing.**
 
-> **Note — bring your own planner.** This repository ships the renderer only; the image→plan half is not included. Any planner that emits the plan contract below works out of the box (see [The plan contract](#the-plan-contract)). Planner implementations live at [directwire/daub-planner](https://github.com/directwire/daub-planner) — including a reference implementation derived from the planner that rendered the paintings in this README.
+> **Note — bring your own planner.** This repository ships the renderer only; the image→plan half is not included. Any planner that emits the plan contract below works out of the box (see [The plan contract](#the-plan-contract)). Planner implementations live at [directwire/daub-planner](https://github.com/directwire/daub-planner) — including a reference implementation derived from the planner that rendered the paintings in this README. To plan with it: clone that repo, `pip install -r reference/requirements.txt`, then point `DAUB_KRMCP_TOOLS` at its `reference/` directory and daub's own tooling plans end to end.
 
 **中文简述：** **daub** 把「笔画目录」（plan JSON：一组带压感的笔画）亚秒级光栅化成完整画作，一次产出 PNG、分层 .kra、分层 .psd 与揭示视频。纯 Rust、零第三方运行时依赖，同一份 plan 任何机器逐字节相同。渲染是标准工序——任何生图流程的输出都是输入原料，daub 补上生成模型给不了的三样：**校准笔触的工序感 · 可回放的作画过程 · 可继续编辑的分层工程文件。**
 
@@ -133,7 +133,7 @@ Platforms: **Windows x64 · Linux x64 / arm64 · macOS Intel / Apple Silicon · 
 - The layer stack is the **first-appearance order** of `layer` in the `strokes` array.
 - `preset` must be a calibrated brush (`daub presets` lists them; unknown names fail loud).
 - Rendering semantics align with Krita: per-stroke scratch-mask compositing within a stroke, alpha-over across strokes and layers, `.kra`/`.psd` written with straight alpha so hosts agree with daub's own composite.
-- **No planner in this repo.** Point `DAUB_KRMCP_TOOLS` at a compatible implementation to light up plan/refine/probe; without it, everything on the render side works and planner-side commands fail loud with guidance. Contract details: [docs/DOWNSTREAM_GUIDE.md](docs/DOWNSTREAM_GUIDE.md).
+- **No planner in this repo.** Point `DAUB_KRMCP_TOOLS` at a compatible implementation to light up plan/refine/probe — [daub-planner](https://github.com/directwire/daub-planner)'s `reference/` directory is the ready-made one; without it, everything on the render side works and planner-side commands fail loud with guidance. Contract details: [docs/DOWNSTREAM_GUIDE.md](docs/DOWNSTREAM_GUIDE.md).
 
 ---
 
