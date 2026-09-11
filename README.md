@@ -38,7 +38,7 @@
 
 Rendering is a **standard pass**. The output of any image pipeline — AI or human — is just input material. What daub adds is what the generative model can't give you: **the craft of calibrated strokes · a replayable painting process · layered files you can keep editing.**
 
-> **Note — bring your own planner.** This repository ships the renderer only; the image→plan half is not included. Any planner that emits the plan contract below works out of the box (see [The plan contract](#the-plan-contract)).
+> **Note — bring your own planner.** This repository ships the renderer only; the image→plan half is not included. Any planner that emits the plan contract below works out of the box (see [The plan contract](#the-plan-contract)). A community collection of planner implementations lives at [directwire/daub-planner](https://github.com/directwire/daub-planner).
 
 **中文简述：** **daub** 把「笔画目录」（plan JSON：一组带压感的笔画）亚秒级光栅化成完整画作，一次产出 PNG、分层 .kra、分层 .psd 与揭示视频。纯 Rust、零第三方运行时依赖，同一份 plan 任何机器逐字节相同。渲染是标准工序——任何生图流程的输出都是输入原料，daub 补上生成模型给不了的三样：**校准笔触的工序感 · 可回放的作画过程 · 可继续编辑的分层工程文件。**
 
