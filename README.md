@@ -9,10 +9,7 @@
 
 *Pure Rust · zero runtime dependencies · PNG · layered .KRA · layered .PSD · reveal video*
 
-<!-- CI badge: re-add when the repo goes public — shields.io can only
-     see public repos, so on a private repo it renders "not found".
 [![CI](https://img.shields.io/github/actions/workflow/status/directwire/daub/ci.yml?style=flat-square&label=CI)](https://github.com/directwire/daub/actions)
--->
 [![platforms](https://img.shields.io/badge/platforms-win_%7C_linux_%7C_macos_%7C_wasm-c4a574?style=flat-square)](#quick-start)
 [![engine](https://img.shields.io/badge/engine-pure_Rust-c4a574?style=flat-square)](#the-plan-contract)
 [![mcp](https://img.shields.io/badge/MCP-12_tools-c4a574?style=flat-square)](#mcp-for-agents)
