@@ -1,0 +1,265 @@
+<!doctype html>
+<!-- daub 画坊 · web 回放演示页（T1/T5）。零构建 file:// 直开。
+     冒烟约定：?bare=1 只留画布本体（0,0 起始、原尺寸）+ ?sample=1
+     自动载内置样例 + &speed=N 倍速 + autoplay 立即播放 +
+     &final=1 同步画满终帧 + &svg=1 终帧走 SVG 光栅（headless
+     canvas2d 大计划腐败，保真度采集专用）；
+     #smoke-probe 的 data-* 属性供 --dump-dom 断言播放完成。 -->
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>daub 画坊 · web 回放</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #10151b; color: #dce7ef;
+    font: 14px/1.5 "Segoe UI", "Microsoft YaHei", sans-serif;
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh;
+  }
+  header { margin: 18px 0 6px; text-align: center; }
+  header h1 { font-size: 18px; margin: 0; letter-spacing: .04em; }
+  header .cap { color: #8aa3b5; font-style: italic; font-family: Georgia, "KaiTi", serif; }
+  #stage { position: relative; margin: 10px 0; }
+  canvas {
+    max-width: min(92vw, 640px); max-height: 60vh;
+    background: #fff; border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+  }
+  #drop {
+    margin: 8px 0; padding: 14px 26px; border: 1.5px dashed #46617a;
+    border-radius: 12px; color: #8aa3b5; cursor: pointer; text-align: center;
+  }
+  #drop.over { border-color: #9cc3e0; color: #dce7ef; }
+  #controls { display: flex; gap: 10px; align-items: center; margin: 8px 0; flex-wrap: wrap; justify-content: center; }
+  button, select {
+    background: #1b2632; color: #dce7ef; border: 1px solid #46617a;
+    border-radius: 999px; padding: 6px 16px; cursor: pointer; font-size: 13px;
+  }
+  button.primary { background: #46617a; border-color: #46617a; }
+  button:disabled { opacity: .4; cursor: default; }
+  #seek { width: 320px; accent-color: #9cc3e0; }
+  #layers { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; margin: 6px 0; max-width: 90vw; }
+  .chip {
+    border: 1px solid #46617a; border-radius: 999px; padding: 3px 12px;
+    font-size: 12px; cursor: pointer; user-select: none; color: #8aa3b5;
+  }
+  .chip.on { color: #dce7ef; background: #22303f; }
+  #info { color: #8aa3b5; font-size: 12px; margin: 4px 0 16px; }
+  #probe { display: none; }
+  /* bare 模式（冒烟）：只剩画布本体，钉死 (0,0) 原尺寸、零滚动 */
+  body.bare header, body.bare #drop, body.bare #controls, body.bare #layers,
+  body.bare #info { display: none; }
+  body.bare #stage { margin: 0; }
+  body.bare canvas { max-width: none; max-height: none; border-radius: 0;
+                     box-shadow: none; display: block; }
+  body.bare { display: block; overflow: hidden; }
+</style>
+</head>
+<body>
+<header>
+  <h1>daub 画坊 · web 回放</h1>
+  <div class="cap">watch it grow ✦ 计划 JSON 逐笔重放，数组序即 z 序</div>
+</header>
+<div id="drop">把 <b>&lt;stem&gt;_plan.json</b> 拖进来，或点击选择 —— 也可以
+  <a href="#" id="loadSample" style="color:#9cc3e0">载入内置样例</a></div>
+<div id="stage"><canvas id="cv" width="512" height="512"></canvas></div>
+<div id="controls">
+  <button id="playBtn" class="primary">▶ 播放</button>
+  <input id="seek" type="range" min="0" max="1000" value="0">
+  <select id="speed">
+    <option value="0.5">0.5×</option>
+    <option value="1" selected>1×</option>
+    <option value="4">4×</option>
+    <option value="20">20×</option>
+    <option value="100">100×</option>
+  </select>
+  <button id="webmBtn">⬇ 导出 webm</button>
+</div>
+<div id="layers"></div>
+<div id="info">未载入计划</div>
+<div id="probe" data-done="0" data-drawn="0" data-total="0"></div>
+<input id="file" type="file" accept=".json,application/json" style="display:none">
+<script src="sample_plan.js"></script>
+<script src="replay.js"></script>
+<script>
+(function () {
+  "use strict";
+  const qs = new URLSearchParams(location.search);
+  const bare = qs.get("bare") === "1";
+  if (bare) document.body.classList.add("bare");
+
+  const cv = document.getElementById("cv");
+  const player = new PlanPlayer(cv);
+  const $ = (id) => document.getElementById(id);
+  const probe = $("probe"), info = $("info"), seek = $("seek"),
+        playBtn = $("playBtn"), speedSel = $("speed");
+
+  function refreshProbe(st) {
+    probe.dataset.drawn = st.drawn != null ? st.drawn : probe.dataset.drawn;
+    probe.dataset.total = player.strokes.length || 0;
+    probe.dataset.done = (player.strokes.length && player.i >= player.strokes.length
+                          && !player.playing) ? "1" : "0";
+  }
+  // 无头冒烟证词：canvas 背包真实像素（3 采样点）写进探针——
+  // 把"canvas 画错"与"canvas 对但截图管线偷换"切开（T3）。
+  function pxProbe() {
+    try {
+      const c = player.ctx.getImageData(0, 0, player.canvas.width,
+                                        player.canvas.height);
+      const at = (x, y) => {
+        const i = (y * c.width + x) * 4;
+        return c.data[i] + "." + c.data[i + 1] + "." + c.data[i + 2];
+      };
+      probe.dataset.px = at(5, 5) + "|" + at(256, 256) + "|" + at(450, 480);
+    } catch (e) { probe.dataset.px = "err:" + e.message; }
+  }
+  player.on("progress", (st) => {
+    if (!bare) seek.value = Math.round(1000 * st.drawn / st.total);
+    refreshProbe(st);
+    if (!bare) info.textContent = st.drawn + " / " + st.total + " 笔";
+  });
+  player.on("state", refreshProbe);
+  player.on("state", function (st) {
+    if (st.done) requestAnimationFrame(function () {}); // 播完强制合成帧（无头截图）
+  });
+  player.on("loaded", (d) => {
+    info.textContent = d.count + " 笔 · " + d.layers.length + " 层 · "
+      + d.canvas[0] + "×" + d.canvas[1];
+    const box = $("layers");
+    box.innerHTML = "";
+    // ?mute=L26,L13 初始静音（走与点按同一条 setVisible 路径；冒烟
+    // 层静音腿用，也顺手是深链能力）。
+    const mute = new Set((qs.get("mute") || "").split(",")
+      .map((s) => s.trim()).filter(Boolean));
+    const visible = new Set(d.layers);
+    d.layers.forEach((name) => {
+      const chip = document.createElement("span");
+      chip.className = "chip on";
+      chip.textContent = name;
+      if (mute.has(name)) {
+        visible.delete(name);
+        chip.classList.remove("on");
+      }
+      chip.onclick = () => {
+        if (visible.has(name)) visible.delete(name); else visible.add(name);
+        chip.classList.toggle("on");
+        player.setVisible(visible);
+      };
+      box.appendChild(chip);
+    });
+    player.setVisible(visible);
+    refreshProbe({ drawn: 0 });
+  });
+
+  playBtn.onclick = () => (player.playing ? player.pause() : player.play());
+  seek.oninput = () => player.seek(seek.value / 1000);
+  speedSel.onchange = () => { player.speed = parseFloat(speedSel.value); };
+
+  $("webmBtn").onclick = async () => {
+    const btn = $("webmBtn");
+    btn.disabled = true;
+    try {
+      const blob = await player.exportWebm();
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "daub_replay.webm";
+      a.click();
+      info.textContent = "webm 已导出（" + Math.round(blob.size / 1024) + " KB）";
+    } catch (e) { info.textContent = "导出失败：" + e.message; }
+    btn.disabled = false;
+  };
+
+  function loadDoc(doc, label) {
+    try {
+      player.load(doc);
+      if (!bare) info.textContent = label + "：" + doc.strokes.length + " 笔已就绪";
+      // 无头截图腿：整图一次画满、单帧、确定性（不赌播放节拍）。
+      // 关键：作画必须发生在 RAF 回调里——load handler/timer 里画的
+      // canvas 内容合成器不锁存，截图必黑（T3 八跑实证：RAF 内作画
+      // 2/2 有内容，load/timer 作画 6/6 纯黑，1.2MB 样例使脚本晚于
+      // 首帧 present）。
+      if (qs.get("final") === "1") {
+        if (qs.get("svg") === "1") {
+          // 保真度采集走 SVG 光栅：headless canvas2d 大计划软件腐败
+          // （T2 实证），SVG 4 万元素稳定；数学与 drawStroke 同源。
+          // muted 透传：?mute= 静音腿与 chip 静音同一条状态。
+          const holder = document.createElement("div");
+          holder.innerHTML = daubReplay.renderSVG(player.doc,
+            { muted: player.muted });
+          const svg = holder.firstChild;
+          svg.style.display = "block";
+          player.canvas.parentNode.replaceChild(svg, player.canvas);
+        } else {
+          requestAnimationFrame(function () {
+            player.redraw(player.strokes.length);
+            pxProbe();
+          });
+        }
+        probe.dataset.done = "1";
+        probe.dataset.total = player.strokes.length;
+        return;
+      }
+      if (qs.get("autoplay") === "1") {
+        if (qs.get("turbo") === "1") player.useTimeoutLoop = true; // 无头虚拟时间
+        player.speed = parseFloat(qs.get("speed") || "1");
+        player.play();
+      }
+    } catch (e) { info.textContent = "载入失败：" + e.message; }
+  }
+  $("loadSample").onclick = (e) => {
+    e.preventDefault();
+    loadDoc(window.DAUB_SAMPLE, "内置样例");
+  };
+  $("drop").onclick = () => $("file").click();
+  $("file").onchange = () => {
+    const f = $("file").files[0];
+    if (!f) return;
+    f.text().then((t) => loadDoc(JSON.parse(t), f.name));
+  };
+  const dz = $("drop");
+  ["dragover", "dragenter"].forEach((ev) =>
+    dz.addEventListener(ev, (e) => { e.preventDefault(); dz.classList.add("over"); }));
+  ["dragleave", "drop"].forEach((ev) =>
+    dz.addEventListener(ev, (e) => { e.preventDefault(); dz.classList.remove("over"); }));
+  dz.addEventListener("drop", (e) => {
+    const f = e.dataTransfer.files[0];
+    if (f) f.text().then((t) => loadDoc(JSON.parse(t), f.name));
+  });
+
+  // 冒烟/直开：?sample=1 自动载样例
+  if (qs.get("sample") === "1" && window.DAUB_SAMPLE) {
+    loadDoc(window.DAUB_SAMPLE, "内置样例");
+  }
+  // 插座：?plan=<url> 载远程计划（http(s) 下可用；file:// 的 fetch
+  // 被浏览器拦）。生图管线把 <stem>_plan.json 挂上静态服务即可接。
+  const planUrl = qs.get("plan");
+  if (planUrl) {
+    fetch(planUrl)
+      .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status);
+                     return r.json(); })
+      .then((d) => loadDoc(d, planUrl))
+      .catch((e) => { info.textContent = "载入失败：" + e.message; });
+  }
+  // ?droptest=<url>：仅冒烟用——fetch 计划文本，合成 File+DataTransfer，
+  // 派发真 DragEvent("drop") 到 #drop 走真 handler（与 wasm.html 同法，
+  // DataTransfer.items.add(File) 标准技法；只有 OS 级传输是模拟的）。
+  const dropUrl = qs.get("droptest");
+  if (dropUrl) {
+    fetch(dropUrl)
+      .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status);
+                     return r.text(); })
+      .then((t) => {
+        const dt = new DataTransfer();
+        dt.items.add(new File([t], "dropped_plan.json",
+                              { type: "application/json" }));
+        $("drop").dispatchEvent(new DragEvent("drop",
+          { dataTransfer: dt, bubbles: true, cancelable: true }));
+      })
+      .catch((e) => { info.textContent = "droptest 失败：" + e.message; });
+  }
+})();
+</script>
+</body>
+</html>

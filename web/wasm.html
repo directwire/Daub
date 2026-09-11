@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>daub WASM 真渲核</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { margin: 24px; font: 14px/1.6 system-ui, sans-serif;
+         background: #f4f2ec; color: #2a2a28; }
+  canvas { border: 1px solid #b9b4a8; max-width: 100%; display: block;
+           image-rendering: pixelated; }
+  #probe { font-family: Consolas, monospace; font-size: 12px;
+           white-space: pre-wrap; }
+  h1 { font-size: 18px; } p.dim { color: #6a675e; max-width: 640px; }
+</style>
+</head>
+<body>
+<h1>daub WASM 真渲核（render.rs → 浏览器，逐像素同 daub.exe）</h1>
+<p class="dim">与 web/index.html 的 JS 笔模回放互补：那边是「过程回放表面」，
+这边是「真值表面」——同一 Rust 渲染核编译进 wasm，浏览器内出的像素与
+daub_paint.exe --render-only 同路。tip 引擎（.kpp 需 fs）不进 wasm；
+W11 带层计划笔笔走胶囊校准，与 daub.exe 默认路径逐像素一致。
+把任意 <b>&lt;stem&gt;_plan.json</b> 拖进本页即真渲（整页投放）。</p>
+<canvas id="cv" width="512" height="512"></canvas>
+<pre id="probe" data-done="0">booting…</pre>
+<script src="wasm/ink_calib.js"></script>
+<script src="wasm/daub_b64.js"></script>
+<script src="wasm/daub.js"></script>
+<script src="sample_plan.js"></script>
+<script>
+// ?bare=1：无头截图面——canvas 钉在 (0,0)，标题/说明/探针全藏，
+// 视口截图即画布逐像素。
+if (new URLSearchParams(location.search).get("bare") === "1") {
+  document.write("<style>body{margin:0}h1,p.dim,#probe{display:none}" +
+                 "canvas{border:none}</style>");
+}
+// file:// 零服务器：wasm 以 base64 内联，wasm-bindgen no-modules 胶水挂
+// window.wasm_bindgen。http 部署时也走同一路径（bytes 已在内存，不 fetch）。
+function b64bytes(b64) {
+  const bin = atob(b64);
+  const u = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+  return u;
+}
+window.daubWasmBoot = function (planText) {
+  const probe = document.getElementById("probe");
+  return wasm_bindgen(b64bytes(window.DAUB_WASM_B64)).then(function () {
+    // 0.2.128 no-modules：init 返回 raw instance.exports（multi-value
+    // 直接成 Array）；包装后的导出挂在 wasm_bindgen 自身。
+    const t0 = performance.now();
+    const r = wasm_bindgen.render_plan_rgba(
+      planText, JSON.stringify(window.DAUB_CAL));
+    const ms = (performance.now() - t0).toFixed(0);
+    const img = new ImageData(new Uint8ClampedArray(r.data), r.width, r.height);
+    const cv = document.getElementById("cv");
+    cv.width = r.width; cv.height = r.height;
+    const ctx = cv.getContext("2d");
+    ctx.putImageData(img, 0, 0);
+    probe.dataset.done = "1";
+    probe.dataset.w = r.width; probe.dataset.h = r.height;
+    probe.dataset.ms = ms;
+    // 自证词：从画布读回三处像素（与 index.html 的 pxProbe 同法）
+    const s = function (x, y) {
+      const d = ctx.getImageData(x, y, 1, 1).data;
+      return d[0] + "," + d[1] + "," + d[2];
+    };
+    probe.dataset.px = [s(5, 5), s(256, 256),
+                        s(Math.floor(r.width / 2), r.height - 32)].join("|");
+    probe.textContent = "wasm render " + r.width + "x" + r.height
+      + " in " + ms + "ms  px=" + probe.dataset.px;
+    return r;
+  }).catch(function (e) {
+    probe.dataset.err = String(e);
+    probe.textContent = "ERR " + e;
+  });
+};
+(function () {
+  // 拖拽（与 index.html 同约）：整页是投放区，File.text() → 真渲。
+  function loadFile(f) {
+    if (!f) return;
+    // 冒烟腿专用：headless 虚拟时间下合成 File 的 .text() 可能不回落
+    // （fetch().json() 同页正常）——__droptestText 是同一份文本，渲染
+    // 链不断。真人拖拽永远走 f.text() 本身。
+    const text = (window.__droptestFile === f && window.__droptestText != null)
+      ? Promise.resolve(window.__droptestText) : f.text();
+    text.then(function (t) { return window.daubWasmBoot(t); })
+      .catch(function (e) {
+        const probe = document.getElementById("probe");
+        probe.dataset.err = String(e);
+        probe.textContent = "ERR " + e;
+      });
+  }
+  ["dragover", "dragenter"].forEach(function (ev) {
+    window.addEventListener(ev, function (e) { e.preventDefault(); });
+  });
+  window.addEventListener("drop", function (e) {
+    e.preventDefault();
+    const dt = e.dataTransfer;
+    // 新版浏览器把非受信（合成）drop 的 dataTransfer 置为保护模式，
+    // files 不可见 —— 冒烟腿走 __droptestFile 兜底（同一个 File，同一
+    // 条 File.text()→真渲链）；真人拖拽永远走 dataTransfer 本身。
+    // 真投放也没文件时落 err 探针，不静默。
+    const f = (dt && dt.files && dt.files[0]) || window.__droptestFile;
+    document.getElementById("probe").textContent =
+      "drop handler: file=" + (f ? f.name : "none");
+    if (!f) {
+      const probe = document.getElementById("probe");
+      probe.dataset.err = "drop without file (protected mode?)";
+      probe.textContent = "ERR drop without file";
+      return;
+    }
+    loadFile(f);
+  });
+  // ?plan=<url>：http(s) 同源计划直喂（与 index.html 的回放插座同约）；
+  // file:// 下 fetch 被拦，err 探针明说，不装死。
+  const qs = new URLSearchParams(location.search);
+  const planUrl = qs.get("plan");
+  // ?droptest=<url>：仅冒烟用——fetch 计划文本，合成 File+DataTransfer，
+  // 派发真 DragEvent("drop") 走上面真 handler（OS 级传输本来就是浏览器
+  // 内部事）。新版浏览器对非受信 drop 的 dataTransfer 是保护模式
+  // （files 不可见），所以另挂 __droptestFile 兜底——handler 拿到的
+  // 是同一个 File，File.text()→真渲链与真人拖拽完全同路。
+  const dropUrl = qs.get("droptest");
+  if (dropUrl) {
+    const probe0 = document.getElementById("probe");
+    probe0.textContent = "droptest fetching " + dropUrl;
+    fetch(dropUrl)
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        probe0.textContent = "droptest fetched, dispatching";
+        return r.text();
+      })
+      .then(function (t) {
+        const f = new File([t], "dropped_plan.json",
+                           { type: "application/json" });
+        const dt = new DataTransfer();
+        dt.items.add(f);
+        window.__droptestFile = f;
+        window.__droptestText = t;
+        window.dispatchEvent(new DragEvent("drop",
+          { dataTransfer: dt, bubbles: true, cancelable: true }));
+      })
+      .catch(function (e) {
+        const probe = document.getElementById("probe");
+        probe.dataset.err = String(e);
+        probe.textContent = "droptest ERR " + e;
+      });
+  } else if (planUrl) {
+    fetch(planUrl)
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (doc) { return window.daubWasmBoot(JSON.stringify(doc)); })
+      .catch(function (e) {
+        const probe = document.getElementById("probe");
+        probe.dataset.err = String(e);
+        probe.textContent = "plan fetch 失败（?plan= 需 http(s) 同源静态服务；"
+          + "file:// 直接拖 JSON 或用内置样例）: " + e;
+      });
+  } else if (window.DAUB_SAMPLE) {
+    window.daubWasmBoot(JSON.stringify(window.DAUB_SAMPLE));
+  }
+})();
+</script>
+</body>
+</html>

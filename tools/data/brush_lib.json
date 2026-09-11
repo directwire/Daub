@@ -1,0 +1,5280 @@
+{
+ "version": 1,
+ "tip_root": "brush_tips",
+ "spacing_auto_prior": 0.25,
+ "layers_tips": [
+  "X1",
+  "X1F",
+  "X1M"
+ ],
+ "max_dabs": 2500000,
+ "presets": {
+  "a) Eraser Circle": {
+   "kpp": "Krita_4_Default_Resources/a)_Eraser_Circle.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=erase",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "a) Eraser Circle",
+   "paintopid": "paintbrush",
+   "composite": "erase",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "a) Eraser Small": {
+   "kpp": "Krita_4_Default_Resources/a)_Eraser_Small.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=erase",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "a) Eraser Small",
+   "paintopid": "paintbrush",
+   "composite": "erase",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "a) Eraser Soft": {
+   "kpp": "Krita_4_Default_Resources/a)_Eraser_Soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=erase",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "a) Eraser Soft",
+   "paintopid": "paintbrush",
+   "composite": "erase",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "b) Airbrush Soft": {
+   "kpp": "Krita_4_Default_Resources/b)_Airbrush_Soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "airbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "b) Airbrush Soft",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "b) Basic-1": {
+   "kpp": "Krita_4_Default_Resources/b)_Basic-1.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=roundmarker",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "b) Basic-1",
+   "paintopid": "roundmarker",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "b) Basic-2 Opacity": {
+   "kpp": "Krita_4_Default_Resources/b)_Basic-2_Opacity.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 20.23,
+     "p90_mean_diff": 51.18,
+     "within60": 0.8819,
+     "width_rmse_px": 5.8,
+     "width_gate_px": 8.06,
+     "alpha_bias": 0.1124,
+     "bleed_px": 0,
+     "cells_scored": 61,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": 0.0015,
+     "bridge_png": "gate_bridge_b_Basic_2_Opacity.png",
+     "daub_png": "gate_daub_b_Basic_2_Opacity.png"
+    }
+   },
+   "resource_name": "b) Basic-2 Opacity",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": false,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "b) Basic-3 Flow": {
+   "kpp": "Krita_4_Default_Resources/b)_Basic-3_Flow.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=tangentialpressure",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "b) Basic-3 Flow",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "b) Basic-4 Flow Opacity": {
+   "kpp": "Krita_4_Default_Resources/b)_Basic-4_Flow_Opacity.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=tangentialpressure",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "b) Basic-4 Flow Opacity",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "b) Basic-5 Size Opacity": {
+   "kpp": "Krita_4_Default_Resources/b)_Basic-5_Size_Opacity.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "b) Basic-5 Size Opacity",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "b) Basic-5 Size": {
+   "kpp": "Krita_4_Default_Resources/b)_Basic-5_Size_default.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 8.09,
+     "p90_mean_diff": 21.92,
+     "within60": 0.9651,
+     "width_rmse_px": 3.24,
+     "width_gate_px": 8.27,
+     "alpha_bias": 0.0084,
+     "bleed_px": 0,
+     "cells_scored": 60,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": 0.0014,
+     "bridge_png": "gate_bridge_b_Basic_5_Size.png",
+     "daub_png": "gate_daub_b_Basic_5_Size.png"
+    }
+   },
+   "resource_name": "b) Basic-5 Size",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": true,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "b) Basic-6 Details": {
+   "kpp": "Krita_4_Default_Resources/b)_Basic-6_Details.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "b) Basic-6 Details",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "c) Pencil-1 Hard": {
+   "kpp": "Krita_4_Default_Resources/c)_Pencil-1_Hard.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "c) Pencil-1 Hard",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "c) Pencil-2": {
+   "kpp": "Krita_4_Default_Resources/c)_Pencil-2.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "c) Pencil-2",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "c) Pencil-3 Large 4B": {
+   "kpp": "Krita_4_Default_Resources/c)_Pencil-3_Large_4B.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "c) Pencil-3 Large 4B",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "c) Pencil-4 Soft": {
+   "kpp": "Krita_4_Default_Resources/c)_Pencil-4_Soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "c) Pencil-4 Soft",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "c) Pencil-5 Tilted": {
+   "kpp": "Krita_4_Default_Resources/c)_Pencil-5_Tilted.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "c) Pencil-5 Tilted",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "c) Pencil-6 Quick Shade": {
+   "kpp": "Krita_4_Default_Resources/c)_Pencil-6_Quick_Shade.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "c) Pencil-6 Quick Shade",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "d) Ink-1 Precision": {
+   "kpp": "Krita_4_Default_Resources/d)_Ink-1_Precision.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "SoftnessValue=0.1",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "d) Ink-1 Precision",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "d) Ink-2 Fineliner": {
+   "kpp": "Krita_4_Default_Resources/d)_Ink-2_Fineliner.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "sizesensor=sensorslist",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "d) Ink-2 Fineliner",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "d) Ink-3 Gpen": {
+   "kpp": "Krita_4_Default_Resources/d)_Ink-3_Gpen.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 9.58,
+     "p90_mean_diff": 41.04,
+     "within60": 0.9555,
+     "width_rmse_px": 4.46,
+     "width_gate_px": 8.33,
+     "alpha_bias": 0.0077,
+     "bleed_px": 0,
+     "cells_scored": 67,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": 0.0006,
+     "bridge_png": "gate_bridge_d_Ink_3_Gpen.png",
+     "daub_png": "gate_daub_d_Ink_3_Gpen.png"
+    }
+   },
+   "resource_name": "d) Ink-3 Gpen",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "d) Ink-4 Pen Rough": {
+   "kpp": "Krita_4_Default_Resources/d)_Ink-4_Pen_Rough.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=sensorslist",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "d) Ink-4 Pen Rough",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "d) Ink-7 Brush Rough": {
+   "kpp": "Krita_4_Default_Resources/d)_Ink-7_Brush_Rough.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "d) Ink-7 Brush Rough",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "d) Ink-8 Sumi-e": {
+   "kpp": "Krita_4_Default_Resources/d)_Ink-8_Sumi-e.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hairybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "d) Ink-8 Sumi-e",
+   "paintopid": "hairybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "e) Marker Chisel Smooth": {
+   "kpp": "Krita_4_Default_Resources/e)_Marker_Chisel_Smooth.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "ratio-sensor-curve",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "e) Marker Chisel Smooth",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "e) Marker Details": {
+   "kpp": "Krita_4_Default_Resources/e)_Marker_Details.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "airbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "e) Marker Details",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "e) Marker Dry": {
+   "kpp": "Krita_4_Default_Resources/e)_Marker_Dry.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=ascension",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "e) Marker Dry",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "f) Bristles-1 Details": {
+   "kpp": "Krita_4_Default_Resources/f)_Bristles-1_Details.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "f) Bristles-1 Details",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "f) Bristles-2 Flat Rough": {
+   "kpp": "Krita_4_Default_Resources/f)_Bristles-2_Flat_Rough.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "f) Bristles-2 Flat Rough",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "f) Bristles-3 Large Smooth": {
+   "kpp": "Krita_4_Default_Resources/f)_Bristles-3_Large_Smooth.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "f) Bristles-3 Large Smooth",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "f) Bristles-4 Glaze": {
+   "kpp": "Krita_4_Default_Resources/f)_Bristles-4_Glaze.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=sensorslist",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "f) Bristles-4 Glaze",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "f) Bristles-5 Flat": {
+   "kpp": "Krita_4_Default_Resources/f)_Bristles-5_Flat.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=tangentialpressure",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "f) Bristles-5 Flat",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "f) Charcoal Rock Soft": {
+   "kpp": "Krita_4_Default_Resources/f)_Charcoal_Rock_Soft.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 41.98,
+     "p90_mean_diff": 107.37,
+     "within60": 0.8714,
+     "width_rmse_px": 15.06,
+     "width_gate_px": 5.42,
+     "alpha_bias": 0.1028,
+     "bleed_px": 0,
+     "cells_scored": 51,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_f_Charcoal_Rock_Soft.png",
+     "daub_png": "gate_daub_f_Charcoal_Rock_Soft.png"
+    }
+   },
+   "resource_name": "f) Charcoal Rock Soft",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "f) Dry Roller": {
+   "kpp": "Krita_4_Default_Resources/f)_Dry_Roller.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "f) Dry Roller",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "g) Dry Bristles": {
+   "kpp": "Krita_4_Default_Resources/g)_Dry_Bristles.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "ratio-sensor-curve",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "g) Dry Bristles",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "g) Dry Bristles Eroded": {
+   "kpp": "Krita_4_Default_Resources/g)_Dry_Bristles_Eroded.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "masking-brush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "g) Dry Bristles Eroded",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "g) Dry Brushing": {
+   "kpp": "Krita_4_Default_Resources/g)_Dry_Brushing.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "g) Dry Brushing",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "g) Dry Textured Creases": {
+   "kpp": "Krita_4_Default_Resources/g)_Dry_Textured_Creases.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "g) Dry Textured Creases",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "h) Chalk Details": {
+   "kpp": "Krita_4_Default_Resources/h)_Chalk_Details.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "h) Chalk Details",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "h) Chalk Grainy": {
+   "kpp": "Krita_4_Default_Resources/h)_Chalk_Grainy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "h) Chalk Grainy",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "h) Chalk Soft": {
+   "kpp": "Krita_4_Default_Resources/h)_Chalk_Soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "h) Chalk Soft",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "h) Charcoal Pencil Medium": {
+   "kpp": "Krita_4_Default_Resources/h)_Charcoal_Pencil_Medium.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "masking-brush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "h) Charcoal Pencil Medium",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "h) Charcoal Pencil Thin": {
+   "kpp": "Krita_4_Default_Resources/h)_Charcoal_Pencil_Thin.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "masking-brush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "h) Charcoal Pencil Thin",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "h) Charcoal pencil large": {
+   "kpp": "Krita_4_Default_Resources/h)_Charcoal_pencil_large.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "masking-brush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "h) Charcoal pencil large",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "i) Wet Bristles": {
+   "kpp": "Krita_4_Default_Resources/i)_Wet_Bristles.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "i) Wet Bristles",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "i) Wet Bristles Rough": {
+   "kpp": "Krita_4_Default_Resources/i)_Wet_Bristles_Rough.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "i) Wet Bristles Rough",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "i) Wet Circle": {
+   "kpp": "Krita_4_Default_Resources/i)_Wet_Circle.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "i) Wet Circle",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "i) Wet Knife": {
+   "kpp": "Krita_4_Default_Resources/i)_Wet_Knife.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "i) Wet Knife",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "i) Wet Paint": {
+   "kpp": "Krita_4_Default_Resources/i)_Wet_Paint.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "i) Wet Paint",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "i) Wet Paint Details": {
+   "kpp": "Krita_4_Default_Resources/i)_Wet_Paint_Details.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "i) Wet Paint Details",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "i) Wet Smear": {
+   "kpp": "Krita_4_Default_Resources/i)_Wet_Smear.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "i) Wet Smear",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "i) Wet Textured Soft": {
+   "kpp": "Krita_4_Default_Resources/i)_Wet_Textured_Soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "i) Wet Textured Soft",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "j) Watercolor Fringe": {
+   "kpp": "Krita_4_Default_Resources/j)_Watercolor_Fringe.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "j) Watercolor Fringe",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "j) Watercolor Texture": {
+   "kpp": "Krita_4_Default_Resources/j)_Watercolor_Texture.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "j) Watercolor Texture",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "j) Waterpaint Hard Edges": {
+   "kpp": "Krita_4_Default_Resources/j)_Waterpaint_Hard_Edges.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "masking-brush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "j) Waterpaint Hard Edges",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "j) Waterpaint Soft Edges": {
+   "kpp": "Krita_4_Default_Resources/j)_Waterpaint_Soft_Edges.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "masking-brush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "j) Waterpaint Soft Edges",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "k) Blender Basic": {
+   "kpp": "Krita_4_Default_Resources/k)_Blender_Basic.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "k) Blender Basic",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "k) Blender Blur": {
+   "kpp": "Krita_4_Default_Resources/k)_Blender_Blur.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "k) Blender Blur",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "k) Blender Knife Edge": {
+   "kpp": "Krita_4_Default_Resources/k)_Blender_Knife_Edge.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "k) Blender Knife Edge",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "k) Blender Pixelize": {
+   "kpp": "Krita_4_Default_Resources/k)_Blender_Pixelize.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=gridbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "k) Blender Pixelize",
+   "paintopid": "gridbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "k) Blender Rake": {
+   "kpp": "Krita_4_Default_Resources/k)_Blender_Rake.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "k) Blender Rake",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "k) Blender Smear": {
+   "kpp": "Krita_4_Default_Resources/k)_Blender_Smear.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "k) Blender Smear",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "k) Blender Textured Soft": {
+   "kpp": "Krita_4_Default_Resources/k)_Blender_Textured_Soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "k) Blender Textured Soft",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "l) Adjust Color": {
+   "kpp": "Krita_4_Default_Resources/l)_Adjust_Color.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=color",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "l) Adjust Color",
+   "paintopid": "paintbrush",
+   "composite": "color",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "l) Adjust Dodge": {
+   "kpp": "Krita_4_Default_Resources/l)_Adjust_Dodge.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=dodge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "l) Adjust Dodge",
+   "paintopid": "paintbrush",
+   "composite": "dodge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "l) Adjust Lighten": {
+   "kpp": "Krita_4_Default_Resources/l)_Adjust_Lighten.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=lighten",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "l) Adjust Lighten",
+   "paintopid": "paintbrush",
+   "composite": "lighten",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "l) Adjust Multiply": {
+   "kpp": "Krita_4_Default_Resources/l)_Adjust_Multiply.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=multiply",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "l) Adjust Multiply",
+   "paintopid": "paintbrush",
+   "composite": "multiply",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "l) Adjust Overlay Burn": {
+   "kpp": "Krita_4_Default_Resources/l)_Adjust_Overlay_Burn.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=overlay",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "l) Adjust Overlay Burn",
+   "paintopid": "paintbrush",
+   "composite": "overlay",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "t) Shapes Fill": {
+   "kpp": "Krita_4_Default_Resources/t)_Shapes_Fill.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=experimentbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "t) Shapes Fill",
+   "paintopid": "experimentbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "t) Shapes Mecha": {
+   "kpp": "Krita_4_Default_Resources/t)_Shapes_Mecha.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "t) Shapes Mecha",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "t) Shapes Rounded": {
+   "kpp": "Krita_4_Default_Resources/t)_Shapes_Rounded.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "t) Shapes Rounded",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "t) Shapes Spikes": {
+   "kpp": "Krita_4_Default_Resources/t)_Shapes_Spikes.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "t) Shapes Spikes",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "t) Shapes Square": {
+   "kpp": "Krita_4_Default_Resources/t)_Shapes_Square.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "ratio-sensor-curve",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "t) Shapes Square",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "u) Pixel Art": {
+   "kpp": "Krita_4_Default_Resources/u)_Pixel_Art.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 16.27,
+     "p90_mean_diff": 46.37,
+     "within60": 0.9433,
+     "width_rmse_px": 5.09,
+     "width_gate_px": 8.4,
+     "alpha_bias": -0.0287,
+     "bleed_px": 0,
+     "cells_scored": 69,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_u_Pixel_Art.png",
+     "daub_png": "gate_daub_u_Pixel_Art.png"
+    }
+   },
+   "resource_name": "u) Pixel Art",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": false,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "u) Pixel Art Dithering": {
+   "kpp": "Krita_4_Default_Resources/u)_Pixel_Art_Dithering.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "u) Pixel Art Dithering",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "u) Pixel Art Fill": {
+   "kpp": "Krita_4_Default_Resources/u)_Pixel_Art_Fill.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "u) Pixel Art Fill",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Clone Tool": {
+   "kpp": "Krita_4_Default_Resources/v)_Clone_Tool.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=duplicate",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Clone Tool",
+   "paintopid": "duplicate",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Distort Grow": {
+   "kpp": "Krita_4_Default_Resources/v)_Distort_Grow.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=deformbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Distort Grow",
+   "paintopid": "deformbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Distort Move": {
+   "kpp": "Krita_4_Default_Resources/v)_Distort_Move.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=deformbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Distort Move",
+   "paintopid": "deformbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Distort Shrink": {
+   "kpp": "Krita_4_Default_Resources/v)_Distort_Shrink.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=deformbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Distort Shrink",
+   "paintopid": "deformbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Experimental Webs": {
+   "kpp": "Krita_4_Default_Resources/v)_Experimental_Webs.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=particlebrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Experimental Webs",
+   "paintopid": "particlebrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Sketching-1 Chrome Thin": {
+   "kpp": "Krita_4_Default_Resources/v)_Sketching-1_Chrome_Thin.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Sketching-1 Chrome Thin",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Sketching-2 Chrome Large": {
+   "kpp": "Krita_4_Default_Resources/v)_Sketching-2_Chrome_Large.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Sketching-2 Chrome Large",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Sketching-3 Leaky": {
+   "kpp": "Krita_4_Default_Resources/v)_Sketching-3_Leaky.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=curvebrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Sketching-3 Leaky",
+   "paintopid": "curvebrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Texture Impressionism": {
+   "kpp": "Krita_4_Default_Resources/v)_Texture_Impressionism.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Texture Impressionism",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "v) Texture Pointillism": {
+   "kpp": "Krita_4_Default_Resources/v)_Texture_Pointillism.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=spraybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "v) Texture Pointillism",
+   "paintopid": "spraybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "w) Texture Normal Map": {
+   "kpp": "Krita_4_Default_Resources/w)_Texture_Normal_Map.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=tangentnormal",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "w) Texture Normal Map",
+   "paintopid": "tangentnormal",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "x) Filter Blur": {
+   "kpp": "Krita_4_Default_Resources/x)_Filter_Blur.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=filter",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "x) Filter Blur",
+   "paintopid": "filter",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "x) Filter Sharpen": {
+   "kpp": "Krita_4_Default_Resources/x)_Filter_Sharpen.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=filter",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "x) Filter Sharpen",
+   "paintopid": "filter",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Screentone Moire": {
+   "kpp": "Krita_4_Default_Resources/y)_Screentone_Moire.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hatchingbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Screentone Moire",
+   "paintopid": "hatchingbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Screentone Pressure": {
+   "kpp": "Krita_4_Default_Resources/y)_Screentone_Pressure.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Screentone Pressure",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Screentones Regular": {
+   "kpp": "Krita_4_Default_Resources/y)_Screentones_Regular.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Screentones Regular",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Big": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Big.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=sensorslist",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Big",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Crackles": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Crackles.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Crackles",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Hair": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Hair.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Hair",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Large Splat": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Large_Splat.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Large Splat",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Noise": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Noise.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Noise",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Random Particles": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Random_Particles.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "sizesensor=sensorslist",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Random Particles",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Reptile": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Reptile.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Reptile",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Snow Pile": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Snow_Pile.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Snow Pile",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Spines": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Spines.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Spines",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Splat": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Splat.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Splat",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Spray": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Spray.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Spray",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Starfield": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Starfield.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=spraybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Starfield",
+   "paintopid": "spraybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "y) Texture Wood Fiber": {
+   "kpp": "Krita_4_Default_Resources/y)_Texture_Wood_Fiber.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "y) Texture Wood Fiber",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Bokeh": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Bokeh.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "z) Stamp Bokeh",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Floor": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Floor.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 40.32,
+     "p90_mean_diff": 91.18,
+     "within60": 0.8324,
+     "width_rmse_px": 12.66,
+     "width_gate_px": 4.03,
+     "alpha_bias": 0.1896,
+     "bleed_px": 0,
+     "cells_scored": 37,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_z_Stamp_Floor.png",
+     "daub_png": "gate_daub_z_Stamp_Floor.png"
+    }
+   },
+   "resource_name": "z) Stamp Floor",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Grass": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Grass.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "ratio-sensor-curve",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "z) Stamp Grass",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Grass Patch": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Grass_Patch.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "ratio-sensor-curve",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "z) Stamp Grass Patch",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Hearts": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Hearts.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=spraybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "z) Stamp Hearts",
+   "paintopid": "spraybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Herbals": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Herbals.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 48.84,
+     "p90_mean_diff": 123.44,
+     "within60": 0.8281,
+     "width_rmse_px": 17.08,
+     "width_gate_px": 2.42,
+     "alpha_bias": 0.1899,
+     "bleed_px": 0,
+     "cells_scored": 37,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_z_Stamp_Herbals.png",
+     "daub_png": "gate_daub_z_Stamp_Herbals.png"
+    }
+   },
+   "resource_name": "z) Stamp Herbals",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Leaves": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Leaves.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "z) Stamp Leaves",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Mountains Distant": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Mountains_Distant.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 120.21,
+     "p90_mean_diff": 171.36,
+     "within60": 0.7224,
+     "width_rmse_px": 29.7,
+     "width_gate_px": 1.56,
+     "alpha_bias": 0.3401,
+     "bleed_px": 0,
+     "cells_scored": 11,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_z_Stamp_Mountains_Distant.png",
+     "daub_png": "gate_daub_z_Stamp_Mountains_Distant.png"
+    }
+   },
+   "resource_name": "z) Stamp Mountains Distant",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Shoujo Bubbles": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Shoujo_Bubbles.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=spraybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "z) Stamp Shoujo Bubbles",
+   "paintopid": "spraybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Sparkles": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Sparkles.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "z) Stamp Sparkles",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Stylised Tree": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Stylised_Tree.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 49.82,
+     "p90_mean_diff": 100.41,
+     "within60": 0.8738,
+     "width_rmse_px": 14.7,
+     "width_gate_px": 3.95,
+     "alpha_bias": 0.1987,
+     "bleed_px": 0,
+     "cells_scored": 48,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_z_Stamp_Stylised_Tree.png",
+     "daub_png": "gate_daub_z_Stamp_Stylised_Tree.png"
+    }
+   },
+   "resource_name": "z) Stamp Stylised Tree",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Vegetal": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Vegetal.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "z) Stamp Vegetal",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "z) Stamp Water": {
+   "kpp": "Krita_4_Default_Resources/z)_Stamp_Water.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 92.48,
+     "p90_mean_diff": 168.25,
+     "within60": 0.7516,
+     "width_rmse_px": 26.02,
+     "width_gate_px": 1.74,
+     "alpha_bias": 0.1816,
+     "bleed_px": 0,
+     "cells_scored": 20,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_z_Stamp_Water.png",
+     "daub_png": "gate_daub_z_Stamp_Water.png"
+    }
+   },
+   "resource_name": "z) Stamp Water",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_4_Default_Resources"
+  },
+  "Airbrush eraser": {
+   "kpp": "Krita_3_Default_Resources/Airbrush_eraser.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=erase",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Airbrush eraser",
+   "paintopid": "paintbrush",
+   "composite": "erase",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Airbrush linear": {
+   "kpp": "Krita_3_Default_Resources/Airbrush_linear.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.2,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 29.27,
+     "p90_mean_diff": 87.04,
+     "within60": 0.8723,
+     "width_rmse_px": 12.81,
+     "width_gate_px": 3.6,
+     "alpha_bias": -0.619,
+     "bleed_px": 0,
+     "cells_scored": 60,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Airbrush_linear.png",
+     "daub_png": "gate_daub_Airbrush_linear.png"
+    }
+   },
+   "resource_name": "Airbrush linear",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": false,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Airbrush linear noisy": {
+   "kpp": "Krita_3_Default_Resources/Airbrush_linear_noisy.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.2,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 15.02,
+     "p90_mean_diff": 48.21,
+     "within60": 0.9085,
+     "width_rmse_px": 6.95,
+     "width_gate_px": 2.14,
+     "alpha_bias": -0.551,
+     "bleed_px": 0,
+     "cells_scored": 60,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Airbrush_linear_noisy.png",
+     "daub_png": "gate_daub_Airbrush_linear_noisy.png"
+    }
+   },
+   "resource_name": "Airbrush linear noisy",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": false,
+   "opacity_active": false,
+   "flow_active": true,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Airbrush pressure": {
+   "kpp": "Krita_3_Default_Resources/Airbrush_pressure.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 6.49,
+     "p90_mean_diff": 12.77,
+     "within60": 0.956,
+     "width_rmse_px": 1.7,
+     "width_gate_px": 5.02,
+     "alpha_bias": 0.0719,
+     "bleed_px": 0,
+     "cells_scored": 31,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Airbrush_pressure.png",
+     "daub_png": "gate_daub_Airbrush_pressure.png"
+    }
+   },
+   "resource_name": "Airbrush pressure",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Basic circle": {
+   "kpp": "Krita_3_Default_Resources/Basic_circle.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": 1.0,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 11.56,
+     "p90_mean_diff": 36.81,
+     "within60": 0.9092,
+     "width_rmse_px": 5.16,
+     "width_gate_px": 7.44,
+     "alpha_bias": 0.1079,
+     "bleed_px": 0,
+     "cells_scored": 55,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Basic_circle.png",
+     "daub_png": "gate_daub_Basic_circle.png"
+    }
+   },
+   "resource_name": "Basic circle",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Basic mix": {
+   "kpp": "Krita_3_Default_Resources/Basic_mix.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Basic mix",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Basic mix soft": {
+   "kpp": "Krita_3_Default_Resources/Basic_mix_soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Basic mix soft",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Basic tip default": {
+   "kpp": "Krita_3_Default_Resources/Basic_tip_default.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": 0.8,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 11.84,
+     "p90_mean_diff": 46.54,
+     "within60": 0.9109,
+     "width_rmse_px": 5.68,
+     "width_gate_px": 8.06,
+     "alpha_bias": 0.1101,
+     "bleed_px": 0,
+     "cells_scored": 58,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Basic_tip_default.png",
+     "daub_png": "gate_daub_Basic_tip_default.png"
+    }
+   },
+   "resource_name": "Basic tip default",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Basic tip gaussian": {
+   "kpp": "Krita_3_Default_Resources/Basic_tip_gaussian.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": 1.0,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 8.29,
+     "p90_mean_diff": 21.45,
+     "within60": 0.935,
+     "width_rmse_px": 2.59,
+     "width_gate_px": 5.63,
+     "alpha_bias": 0.0906,
+     "bleed_px": 0,
+     "cells_scored": 32,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Basic_tip_gaussian.png",
+     "daub_png": "gate_daub_Basic_tip_gaussian.png"
+    }
+   },
+   "resource_name": "Basic tip gaussian",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Basic tip soft": {
+   "kpp": "Krita_3_Default_Resources/Basic_tip_soft.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": 0.8,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 5.3,
+     "p90_mean_diff": 13.12,
+     "within60": 0.9601,
+     "width_rmse_px": 1.34,
+     "width_gate_px": 4.14,
+     "alpha_bias": 0.0572,
+     "bleed_px": 0,
+     "cells_scored": 29,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Basic_tip_soft.png",
+     "daub_png": "gate_daub_Basic_tip_soft.png"
+    }
+   },
+   "resource_name": "Basic tip soft",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Basic wet": {
+   "kpp": "Krita_3_Default_Resources/Basic_wet.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Basic wet",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Basic wet soft": {
+   "kpp": "Krita_3_Default_Resources/Basic_wet_soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Basic wet soft",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Blender Blur": {
+   "kpp": "Krita_3_Default_Resources/Blender_Blur.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Blender Blur",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Block basic": {
+   "kpp": "Krita_3_Default_Resources/Block_basic.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Block basic",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Block bristles": {
+   "kpp": "Krita_3_Default_Resources/Block_bristles.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Block bristles",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Block fuzzy": {
+   "kpp": "Krita_3_Default_Resources/Block_fuzzy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Block fuzzy",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Block mix tilt": {
+   "kpp": "Krita_3_Default_Resources/Block_mix_tilt.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Block mix tilt",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Block textured 1": {
+   "kpp": "Krita_3_Default_Resources/Block_textured_1.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "ratio-sensor-curve",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Block textured 1",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Block textured 2": {
+   "kpp": "Krita_3_Default_Resources/Block_textured_2.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Block textured 2",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Block tilt": {
+   "kpp": "Krita_3_Default_Resources/Block_tilt.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=ascension",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Block tilt",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Block wet tilt": {
+   "kpp": "Krita_3_Default_Resources/Block_wet_tilt.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Block wet tilt",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristle Details": {
+   "kpp": "Krita_3_Default_Resources/Bristle_Details.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hairybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristle Details",
+   "paintopid": "hairybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristle Large": {
+   "kpp": "Krita_3_Default_Resources/Bristle_Large.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hairybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristle Large",
+   "paintopid": "hairybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristle Special Blender": {
+   "kpp": "Krita_3_Default_Resources/Bristle_Special_Blender.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hairybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristle Special Blender",
+   "paintopid": "hairybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristle Squared": {
+   "kpp": "Krita_3_Default_Resources/Bristle_Squared.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hairybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristle Squared",
+   "paintopid": "hairybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristle Tapered": {
+   "kpp": "Krita_3_Default_Resources/Bristle_Tapered.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hairybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristle Tapered",
+   "paintopid": "hairybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristle Texture": {
+   "kpp": "Krita_3_Default_Resources/Bristle_Texture.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hairybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristle Texture",
+   "paintopid": "hairybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristle frottis": {
+   "kpp": "Krita_3_Default_Resources/Bristle_frottis.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristle frottis",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristles hairy": {
+   "kpp": "Krita_3_Default_Resources/Bristles_hairy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristles hairy",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristles mix": {
+   "kpp": "Krita_3_Default_Resources/Bristles_mix.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristles mix",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristles textured": {
+   "kpp": "Krita_3_Default_Resources/Bristles_textured.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristles textured",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Bristles wet": {
+   "kpp": "Krita_3_Default_Resources/Bristles_wet.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Bristles wet",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Brush dotted": {
+   "kpp": "Krita_3_Default_Resources/Brush_dotted.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "ratio-sensor-curve",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Brush dotted",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Brush textured": {
+   "kpp": "Krita_3_Default_Resources/Brush_textured.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "ratio-sensor-curve",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Brush textured",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Clone tool": {
+   "kpp": "Krita_3_Default_Resources/Clone_tool.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=duplicate",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Clone tool",
+   "paintopid": "duplicate",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Curve curvy": {
+   "kpp": "Krita_3_Default_Resources/Curve_curvy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=curvebrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Curve curvy",
+   "paintopid": "curvebrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Curve ink": {
+   "kpp": "Krita_3_Default_Resources/Curve_ink.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=curvebrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Curve ink",
+   "paintopid": "curvebrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Curve recurvy": {
+   "kpp": "Krita_3_Default_Resources/Curve_recurvy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=curvebrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Curve recurvy",
+   "paintopid": "curvebrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Curve smooth": {
+   "kpp": "Krita_3_Default_Resources/Curve_smooth.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=curvebrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Curve smooth",
+   "paintopid": "curvebrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Eraser circle": {
+   "kpp": "Krita_3_Default_Resources/Eraser_circle.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=erase",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Eraser circle",
+   "paintopid": "paintbrush",
+   "composite": "erase",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Eraser hard": {
+   "kpp": "Krita_3_Default_Resources/Eraser_hard.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=erase",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Eraser hard",
+   "paintopid": "paintbrush",
+   "composite": "erase",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Eraser soft": {
+   "kpp": "Krita_3_Default_Resources/Eraser_soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=erase",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Eraser soft",
+   "paintopid": "paintbrush",
+   "composite": "erase",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "FX blur light": {
+   "kpp": "Krita_3_Default_Resources/FX_blur_light.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=filter",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "FX blur light",
+   "paintopid": "filter",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "FX color HSY": {
+   "kpp": "Krita_3_Default_Resources/FX_color_HSY.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=color",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "FX color HSY",
+   "paintopid": "paintbrush",
+   "composite": "color",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "FX explode": {
+   "kpp": "Krita_3_Default_Resources/FX_explode.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=add",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "FX explode",
+   "paintopid": "paintbrush",
+   "composite": "add",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "FX glow add": {
+   "kpp": "Krita_3_Default_Resources/FX_glow_add.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=add",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "FX glow add",
+   "paintopid": "paintbrush",
+   "composite": "add",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "FX overlay": {
+   "kpp": "Krita_3_Default_Resources/FX_overlay.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=overlay",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "FX overlay",
+   "paintopid": "paintbrush",
+   "composite": "overlay",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "FX splat starfield": {
+   "kpp": "Krita_3_Default_Resources/FX_splat_starfield.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=add",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "FX splat starfield",
+   "paintopid": "paintbrush",
+   "composite": "add",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Fill block": {
+   "kpp": "Krita_3_Default_Resources/Fill_block.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "tip-shape=rect (engine verdict: MaskGenerator type=rect not modelled)",
+   "spacing": 0.25,
+   "auto_spacing_coeff": 0.25,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 31.69,
+     "p90_mean_diff": 112.9,
+     "within60": 0.9269,
+     "width_rmse_px": 13.31,
+     "width_gate_px": 8.2,
+     "alpha_bias": 0.0315,
+     "bleed_px": 0,
+     "cells_scored": 57,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Fill_block.png",
+     "daub_png": "gate_daub_Fill_block.png"
+    }
+   },
+   "resource_name": "Fill block",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Fill circle": {
+   "kpp": "Krita_3_Default_Resources/Fill_circle.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": 1.1,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 5.79,
+     "p90_mean_diff": 13.57,
+     "within60": 0.9725,
+     "width_rmse_px": 3.19,
+     "width_gate_px": 8.01,
+     "alpha_bias": 0.0181,
+     "bleed_px": 0,
+     "cells_scored": 65,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Fill_circle.png",
+     "daub_png": "gate_daub_Fill_circle.png"
+    }
+   },
+   "resource_name": "Fill circle",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Grid square 25": {
+   "kpp": "Krita_3_Default_Resources/Grid_square_25.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=gridbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Grid square 25",
+   "paintopid": "gridbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Hatch crispy": {
+   "kpp": "Krita_3_Default_Resources/Hatch_crispy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hatchingbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Hatch crispy",
+   "paintopid": "hatchingbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Hatch cross regular": {
+   "kpp": "Krita_3_Default_Resources/Hatch_cross_regular.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hatchingbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Hatch cross regular",
+   "paintopid": "hatchingbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Hatch cross small": {
+   "kpp": "Krita_3_Default_Resources/Hatch_cross_small.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hatchingbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Hatch cross small",
+   "paintopid": "hatchingbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Hatch diag S": {
+   "kpp": "Krita_3_Default_Resources/Hatch_diag_S.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hatchingbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Hatch diag S",
+   "paintopid": "hatchingbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Hatch diag fat": {
+   "kpp": "Krita_3_Default_Resources/Hatch_diag_fat.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hatchingbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Hatch diag fat",
+   "paintopid": "hatchingbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Hatch moire": {
+   "kpp": "Krita_3_Default_Resources/Hatch_moire.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hatchingbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Hatch moire",
+   "paintopid": "hatchingbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Hatch noisy": {
+   "kpp": "Krita_3_Default_Resources/Hatch_noisy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=hatchingbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Hatch noisy",
+   "paintopid": "hatchingbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Ink ballpen": {
+   "kpp": "Krita_3_Default_Resources/Ink_ballpen.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": 0.3,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 9.08,
+     "p90_mean_diff": 22.22,
+     "within60": 0.9489,
+     "width_rmse_px": 5.11,
+     "width_gate_px": 6.89,
+     "alpha_bias": 0.0755,
+     "bleed_px": 0,
+     "cells_scored": 45,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Ink_ballpen.png",
+     "daub_png": "gate_daub_Ink_ballpen.png"
+    }
+   },
+   "resource_name": "Ink ballpen",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": true,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Ink brush 25": {
+   "kpp": "Krita_3_Default_Resources/Ink_brush_25.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.25,
+   "auto_spacing_coeff": 0.8,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 7.24,
+     "p90_mean_diff": 21.82,
+     "within60": 0.9656,
+     "width_rmse_px": 4.43,
+     "width_gate_px": 8.06,
+     "alpha_bias": 0.0401,
+     "bleed_px": 0,
+     "cells_scored": 64,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Ink_brush_25.png",
+     "daub_png": "gate_daub_Ink_brush_25.png"
+    }
+   },
+   "resource_name": "Ink brush 25",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": true,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Ink circle 05": {
+   "kpp": "Krita_3_Default_Resources/Ink_circle_05.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 5.21,
+     "p90_mean_diff": 8.53,
+     "within60": 0.9678,
+     "width_rmse_px": 1.4,
+     "width_gate_px": 5.55,
+     "alpha_bias": 0.0265,
+     "bleed_px": 0,
+     "cells_scored": 63,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Ink_circle_05.png",
+     "daub_png": "gate_daub_Ink_circle_05.png"
+    }
+   },
+   "resource_name": "Ink circle 05",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Ink circle 10": {
+   "kpp": "Krita_3_Default_Resources/Ink_circle_10.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 5.11,
+     "p90_mean_diff": 9.36,
+     "within60": 0.9714,
+     "width_rmse_px": 2.74,
+     "width_gate_px": 6.65,
+     "alpha_bias": 0.0068,
+     "bleed_px": 0,
+     "cells_scored": 61,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Ink_circle_10.png",
+     "daub_png": "gate_daub_Ink_circle_10.png"
+    }
+   },
+   "resource_name": "Ink circle 10",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Ink gpen 10": {
+   "kpp": "Krita_3_Default_Resources/Ink_gpen_10.kpp",
+   "use_tips": false,
+   "supported": true,
+   "unsupported_reason": "flow-buildup",
+   "spacing": 0.25,
+   "auto_spacing_coeff": 0.8,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Ink gpen 10",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": true,
+   "flow_min": 0.0949,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Ink gpen 25": {
+   "kpp": "Krita_3_Default_Resources/Ink_gpen_25.kpp",
+   "use_tips": false,
+   "supported": true,
+   "unsupported_reason": "flow-buildup",
+   "spacing": 0.25,
+   "auto_spacing_coeff": 0.8,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Ink gpen 25",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": true,
+   "flow_min": 0.0822,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Ink tilt 10": {
+   "kpp": "Krita_3_Default_Resources/Ink_tilt_10.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=ascension",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Ink tilt 10",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Ink tilt 20": {
+   "kpp": "Krita_3_Default_Resources/Ink_tilt_20.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=ascension",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Ink tilt 20",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Layout block": {
+   "kpp": "Krita_3_Default_Resources/Layout_block.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=ascension",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Layout block",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Layout circle soft": {
+   "kpp": "Krita_3_Default_Resources/Layout_circle_soft.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.02,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 19.48,
+     "p90_mean_diff": 72.44,
+     "within60": 0.8917,
+     "width_rmse_px": 9.92,
+     "width_gate_px": 6.4,
+     "alpha_bias": 0.1824,
+     "bleed_px": 0,
+     "cells_scored": 38,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Layout_circle_soft.png",
+     "daub_png": "gate_daub_Layout_circle_soft.png"
+    }
+   },
+   "resource_name": "Layout circle soft",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": false,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Layout oval": {
+   "kpp": "Krita_3_Default_Resources/Layout_oval.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=tangentialpressure",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Layout oval",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Layout pen": {
+   "kpp": "Krita_3_Default_Resources/Layout_pen.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.03,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 14.62,
+     "p90_mean_diff": 39.17,
+     "within60": 0.9309,
+     "width_rmse_px": 6.19,
+     "width_gate_px": 8.1,
+     "alpha_bias": 0.1033,
+     "bleed_px": 0,
+     "cells_scored": 62,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Layout_pen.png",
+     "daub_png": "gate_daub_Layout_pen.png"
+    }
+   },
+   "resource_name": "Layout pen",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Move tool": {
+   "kpp": "Krita_3_Default_Resources/Move_tool.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=deformbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Move tool",
+   "paintopid": "deformbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Oils bristle": {
+   "kpp": "Krita_3_Default_Resources/Oils_bristle.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Oils bristle",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Oils knife": {
+   "kpp": "Krita_3_Default_Resources/Oils_knife.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Oils knife",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Pastel texture large": {
+   "kpp": "Krita_3_Default_Resources/Pastel_texture_large.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Pastel texture large",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Pastel texture thin": {
+   "kpp": "Krita_3_Default_Resources/Pastel_texture_thin.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Pastel texture thin",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Pencil 2B": {
+   "kpp": "Krita_3_Default_Resources/Pencil_2B.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Pencil 2B",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Pencil HB": {
+   "kpp": "Krita_3_Default_Resources/Pencil_HB.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.2,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 22.12,
+     "p90_mean_diff": 59.74,
+     "within60": 0.8508,
+     "width_rmse_px": 4.49,
+     "width_gate_px": 3.66,
+     "alpha_bias": -0.3385,
+     "bleed_px": 0,
+     "cells_scored": 13,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_Pencil_HB.png",
+     "daub_png": "gate_daub_Pencil_HB.png"
+    }
+   },
+   "resource_name": "Pencil HB",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": true,
+   "flow_active": true,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Pencil texture": {
+   "kpp": "Krita_3_Default_Resources/Pencil_texture.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Pencil texture",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Pencil tilt": {
+   "kpp": "Krita_3_Default_Resources/Pencil_tilt.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=ascension",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Pencil tilt",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "PixelArt Dithering": {
+   "kpp": "Krita_3_Default_Resources/Pixelart_dither.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "PixelArt Dithering",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "PixelArt Round": {
+   "kpp": "Krita_3_Default_Resources/Pixelart_round.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.05,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 8.49,
+     "p90_mean_diff": 34.95,
+     "within60": 0.9629,
+     "width_rmse_px": 4.61,
+     "width_gate_px": 8.4,
+     "alpha_bias": -0.0051,
+     "bleed_px": 0,
+     "cells_scored": 67,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_PixelArt_Round.png",
+     "daub_png": "gate_daub_PixelArt_Round.png"
+    }
+   },
+   "resource_name": "PixelArt Round",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "PixelArt Square": {
+   "kpp": "Krita_3_Default_Resources/Pixelart_square.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "tip-shape=rect (engine verdict: MaskGenerator type=rect not modelled)",
+   "spacing": 0.05,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": false,
+    "measured": {
+     "pass": false,
+     "median_mean_diff": 25.69,
+     "p90_mean_diff": 91.28,
+     "within60": 0.9382,
+     "width_rmse_px": 11.08,
+     "width_gate_px": 8.2,
+     "alpha_bias": 0.0292,
+     "bleed_px": 0,
+     "cells_scored": 57,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_PixelArt_Square.png",
+     "daub_png": "gate_daub_PixelArt_Square.png"
+    }
+   },
+   "resource_name": "PixelArt Square",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": true,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Quick circle big": {
+   "kpp": "Krita_3_Default_Resources/Quick_circle_big.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=roundmarker",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Quick circle big",
+   "paintopid": "roundmarker",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Quick circle huge": {
+   "kpp": "Krita_3_Default_Resources/Quick_circle_huge.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=roundmarker",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Quick circle huge",
+   "paintopid": "roundmarker",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Quick circle layout": {
+   "kpp": "Krita_3_Default_Resources/Quick_circle_layout.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=roundmarker",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Quick circle layout",
+   "paintopid": "roundmarker",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Rake bristle dry": {
+   "kpp": "Krita_3_Default_Resources/Rake_bristle_dry.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Rake bristle dry",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Rake texture": {
+   "kpp": "Krita_3_Default_Resources/Rake_texture.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Rake texture",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Screentones": {
+   "kpp": "Krita_3_Default_Resources/Screentones.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "pattern-texture",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Screentones",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Screentones eraser": {
+   "kpp": "Krita_3_Default_Resources/Screentones_eraser.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "composite=erase",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Screentones eraser",
+   "paintopid": "paintbrush",
+   "composite": "erase",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Shape fill": {
+   "kpp": "Krita_3_Default_Resources/Shape_fill.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=experimentbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Shape fill",
+   "paintopid": "experimentbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Shape smooth": {
+   "kpp": "Krita_3_Default_Resources/Shape_smooth.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=experimentbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Shape smooth",
+   "paintopid": "experimentbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch": {
+   "kpp": "Krita_3_Default_Resources/Sketch.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch chrome": {
+   "kpp": "Krita_3_Default_Resources/Sketch_chrome.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch chrome",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch fur": {
+   "kpp": "Krita_3_Default_Resources/Sketch_fur.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch fur",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch ink big": {
+   "kpp": "Krita_3_Default_Resources/Sketch_ink_big.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch ink big",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch ink small": {
+   "kpp": "Krita_3_Default_Resources/Sketch_ink_small.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch ink small",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch line": {
+   "kpp": "Krita_3_Default_Resources/Sketch_line.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch line",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch shade": {
+   "kpp": "Krita_3_Default_Resources/Sketch_shade.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch shade",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch shade wash": {
+   "kpp": "Krita_3_Default_Resources/Sketch_shade_wash.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch shade wash",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch speedpaint": {
+   "kpp": "Krita_3_Default_Resources/Sketch_speedpaint.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch speedpaint",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch speedpaint shade": {
+   "kpp": "Krita_3_Default_Resources/Sketch_speedpaint_shade.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch speedpaint shade",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sketch wires": {
+   "kpp": "Krita_3_Default_Resources/Sketch_wires.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=sketchbrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sketch wires",
+   "paintopid": "sketchbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Smudge block tilt": {
+   "kpp": "Krita_3_Default_Resources/Smudge_block_tilt.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Smudge block tilt",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Smudge rake": {
+   "kpp": "Krita_3_Default_Resources/Smudge_rake.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Smudge rake",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Smudge rake 2": {
+   "kpp": "Krita_3_Default_Resources/Smudge_rake_2.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Smudge rake 2",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Smudge soft": {
+   "kpp": "Krita_3_Default_Resources/Smudge_soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Smudge soft",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Smudge textured": {
+   "kpp": "Krita_3_Default_Resources/Smudge_textured.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Smudge textured",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Smudge water": {
+   "kpp": "Krita_3_Default_Resources/Smudge_water.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Smudge water",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sparkle wet": {
+   "kpp": "Krita_3_Default_Resources/Sparkle_wet.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sparkle wet",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sparkle wet soft": {
+   "kpp": "Krita_3_Default_Resources/Sparkle_wet_soft.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sparkle wet soft",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Special FuzzyColor": {
+   "kpp": "Krita_3_Default_Resources/Special_FuzzyColor.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "opacitysensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Special FuzzyColor",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Special dyna dots": {
+   "kpp": "Krita_3_Default_Resources/Special_dyna_dots.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=dynabrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Special dyna dots",
+   "paintopid": "dynabrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Special particles crazy": {
+   "kpp": "Krita_3_Default_Resources/Special_particles_crazy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=particlebrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Special particles crazy",
+   "paintopid": "particlebrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Splat mix cells": {
+   "kpp": "Krita_3_Default_Resources/Splat_mix_cells.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Splat mix cells",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Splat texture": {
+   "kpp": "Krita_3_Default_Resources/Splat_texture.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Splat texture",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Splat texture 2": {
+   "kpp": "Krita_3_Default_Resources/Splat_texture_2.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Splat texture 2",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Splat wet cells": {
+   "kpp": "Krita_3_Default_Resources/Splat_wet_cells.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=colorsmudge",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Splat wet cells",
+   "paintopid": "colorsmudge",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Splatter thin": {
+   "kpp": "Krita_3_Default_Resources/Splatter_thin.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Splatter thin",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Sponge texture": {
+   "kpp": "Krita_3_Default_Resources/Sponge_texture.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=sensorslist",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Sponge texture",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Spray splat": {
+   "kpp": "Krita_3_Default_Resources/Spray_splat.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=spraybrush",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Spray splat",
+   "paintopid": "spraybrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Tangent normal basic": {
+   "kpp": "Krita_3_Default_Resources/Tangent_normal_basic.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=tangentnormal",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Tangent normal basic",
+   "paintopid": "tangentnormal",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Tangent normal drawing angle": {
+   "kpp": "Krita_3_Default_Resources/Tangent_normal_drawing_angle.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=tangentnormal",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Tangent normal drawing angle",
+   "paintopid": "tangentnormal",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Tangent normal hairy": {
+   "kpp": "Krita_3_Default_Resources/Tangent_normal_hairy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=tangentnormal",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Tangent normal hairy",
+   "paintopid": "tangentnormal",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Tangent normal pixel": {
+   "kpp": "Krita_3_Default_Resources/Tangent_normal_pixel.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=tangentnormal",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Tangent normal pixel",
+   "paintopid": "tangentnormal",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Tangent normal y inverted": {
+   "kpp": "Krita_3_Default_Resources/Tangent_normal_y_inverted.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "paintopid=tangentnormal",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Tangent normal y inverted",
+   "paintopid": "tangentnormal",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Texture fuzzy": {
+   "kpp": "Krita_3_Default_Resources/Texture_fuzzy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Texture fuzzy",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Texture hair": {
+   "kpp": "Krita_3_Default_Resources/Texture_hair.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=drawingangle",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Texture hair",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Texture leaves fuzzy": {
+   "kpp": "Krita_3_Default_Resources/Texture_leaves_fuzzy.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=fuzzy",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Texture leaves fuzzy",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "Textured tilt": {
+   "kpp": "Krita_3_Default_Resources/Textured_tilt.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "rotation-sensor=ascension",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "Textured tilt",
+   "paintopid": "paintbrush",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "ink precision 03": {
+   "kpp": "Krita_3_Default_Resources/ink_precision_03.kpp",
+   "use_tips": false,
+   "supported": false,
+   "unsupported_reason": "SoftnessValue=0.1",
+   "spacing": 0.25,
+   "auto_spacing_coeff": null,
+   "spacing_source": "prior",
+   "gate": {
+    "pass": false,
+    "measured": null
+   },
+   "resource_name": "ink precision 03",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "bundle": "Krita_3_Default_Resources"
+  },
+  "pixel1": {
+   "kpp": "Krita_3_Default_Resources/pixel1.kpp",
+   "use_tips": true,
+   "supported": true,
+   "unsupported_reason": null,
+   "spacing": 0.1,
+   "auto_spacing_coeff": null,
+   "spacing_source": "xml",
+   "gate": {
+    "pass": true,
+    "measured": {
+     "pass": true,
+     "median_mean_diff": 4.25,
+     "p90_mean_diff": 6.95,
+     "within60": 0.9784,
+     "width_rmse_px": 4.89,
+     "width_gate_px": 8.4,
+     "alpha_bias": 0.0228,
+     "bleed_px": 0,
+     "cells_scored": 69,
+     "cells_total": 84,
+     "rig_wcov_worst_rel": null,
+     "bridge_png": "gate_bridge_pixel1.png",
+     "daub_png": "gate_daub_pixel1.png"
+    }
+   },
+   "resource_name": "pixel1",
+   "paintopid": "paintbrush",
+   "rotation_sensor": "pressure",
+   "tip_w": 200,
+   "tip_h": 200,
+   "tip_alpha_min": 255,
+   "size_active": false,
+   "opacity_active": false,
+   "flow_active": false,
+   "bundle": "Krita_3_Default_Resources"
+  }
+ }
+}

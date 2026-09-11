@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- webm 导出证据页（_check_replay.py 证据4 模板）：截断 300 笔 →
+     exportWebm() → blob 尺寸+data URL 写进 #probe，供 dump-dom 取回。
+     相对路径按 build/ 落点写（../../ = web/）。 -->
+<html><head><style>body{margin:0}canvas{display:block}</style></head>
+<body><canvas id="cv" width="512" height="512"></canvas>
+<script src="../../sample_plan.js"></script><script src="../../replay.js"></script><script>
+var player = new daubReplay.PlanPlayer(document.getElementById("cv"));
+var doc = JSON.parse(JSON.stringify(window.DAUB_SAMPLE));
+doc.strokes = doc.strokes.slice(0, 300);
+player.useTimeoutLoop = true;
+player.speed = 400;
+var px = document.createElement("div");
+px.id = "probe"; px.dataset.done = "0"; px.dataset.bytes = "?";
+document.body.appendChild(px);
+var t0 = Date.now();
+player.load(doc);
+player.exportWebm().then(function (blob) {
+  px.dataset.bytes = blob.size; px.dataset.type = blob.type;
+  px.dataset.ms = Date.now() - t0; px.dataset.done = "1";
+  var rd = new FileReader();
+  rd.onload = function () { px.dataset.data = rd.result; };
+  rd.readAsDataURL(blob);
+}).catch(function (e) {
+  px.dataset.bytes = "ERR:" + e.message; px.dataset.done = "2";
+});
+</script></body></html>

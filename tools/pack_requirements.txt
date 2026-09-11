@@ -1,0 +1,17 @@
+# Build interpreter deps for tools/build_paint.py (the daub_paint exe).
+# PINNED: the planner is float-threshold sensitive, so the bundle must
+# carry the exact versions the dev chain runs (hermes venv). scikit-image
+# is NOT optional: stroke_trace prefers skimage.morphology.skeletonize
+# and only falls back to its Zhang-Suen loop without it - the two emit
+# different skeletons, so omitting it silently diverges plan output
+# (measured on img1200: 87693 vs 87624 strokes). build_paint.py refuses
+# to build without it.
+numpy==2.4.3
+pillow==12.3.0
+scipy==1.17.1
+scikit-image==0.26.0
+pyinstaller==6.22.2
+# GUI only (daub_gui): a windowed front-end that launches the engine
+# exe as a subprocess - never imported by daub_paint / the planner, so
+# this pin cannot change plan output.
+pyside6==6.8.3

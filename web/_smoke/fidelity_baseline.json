@@ -1,0 +1,8 @@
+{
+ "mean_abs_vs_truth": 7.66,
+ "within60_pct": 99.7,
+ "mean_abs_vs_bg": 46.76,
+ "strokes": 3784,
+ "plan": "sample512_plan.json",
+ "prev_mean_abs": 7.66
+}

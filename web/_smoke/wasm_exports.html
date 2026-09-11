@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh">
+<head><meta charset="utf-8">
+<title>daub wasm exports harness（冒烟专用）</title></head>
+<body>
+<pre id="probe" data-done="0">booting…</pre>
+<script src="../wasm/ink_calib.js"></script>
+<script src="../wasm/daub_b64.js"></script>
+<script src="../wasm/daub.js"></script>
+<script>
+// ?plan=<url> —— 真值三出口契约腿：TruthPlayer 终帧 vs
+// render_plan_rgba 逐像素对表；build_kra_bytes / build_psd_bytes 以
+// base64 写进探针 data-* 属性，dump-dom 时随之落到 stdout，由
+// _check_wasm.py 与 native daub.exe 产物做逐字节对表（kra/psd 全程
+// 固定日期，字节决定论是硬契约）。不走网络回传：virtual-time 预算
+// 不等上传，2MB POST 会在半途被渲染器拆除（截断 JSON 实证过）；
+// DOM 属性是 JS 侧同步落定的，dump-dom 必然带上。
+function b64bytes(b64) {
+  const bin = atob(b64);
+  const u = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i);
+  return u;
+}
+function bytesB64(u8) {
+  let s = "";
+  for (let i = 0; i < u8.length; i += 0x8000)
+    s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000));
+  return btoa(s);
+}
+function setErr(e) {
+  const p = document.getElementById("probe");
+  p.dataset.err = String(e);
+  p.textContent = "ERR " + e;
+}
+const qs = new URLSearchParams(location.search);
+fetch(qs.get("plan")).then(function (r) { return r.json(); })
+  .then(function (plan) {
+    return wasm_bindgen(b64bytes(window.DAUB_WASM_B64)).then(function () {
+      const probe = document.getElementById("probe");
+      const planText = JSON.stringify(plan);
+      const calText = JSON.stringify(window.DAUB_CAL);
+      const t0 = performance.now();
+      const tp = new wasm_bindgen.TruthPlayer(planText, calText);
+      const n = tp.stroke_count;
+      const fr = tp.frame(n);              // 回放器终帧
+      const whole = wasm_bindgen.render_plan_rgba(planText, calText);
+      const ms = (performance.now() - t0).toFixed(0);
+      const pxOf = function (r) {
+        const cv = document.createElement("canvas");
+        cv.width = r.width; cv.height = r.height;
+        const ctx = cv.getContext("2d");
+        ctx.putImageData(
+          new ImageData(new Uint8ClampedArray(r.data), r.width, r.height), 0, 0);
+        const s = function (x, y) {
+          const d = ctx.getImageData(x, y, 1, 1).data;
+          return d[0] + "," + d[1] + "," + d[2];
+        };
+        return [s(5, 5), s(256, 256),
+                s(Math.floor(r.width / 2), r.height - 32)].join("|");
+      };
+      const pxp = pxOf(fr), pxw = pxOf(whole);
+      probe.dataset.strokes = String(n);
+      probe.dataset.px_player = pxp;
+      probe.dataset.px_whole = pxw;
+      probe.dataset.ms = ms;
+      return Promise.all([
+        wasm_bindgen.build_kra_bytes(planText, calText, "smoke"),
+        wasm_bindgen.build_psd_bytes(planText, calText),
+      ]).then(function (arts) {
+        // base64 只含 A-Za-z0-9+/=，进 XML 属性无需转义，dump-dom 原样带出
+        probe.dataset.kra = bytesB64(arts[0]);
+        probe.dataset.psd = bytesB64(arts[1]);
+        probe.dataset.done = "1";
+        probe.textContent = "exports ok strokes=" + n + " in " + ms + "ms";
+      });
+    });
+  }).catch(setErr);
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+{
+ "hero": {
+  "video": "hero_1080.mp4",
+  "poster": "hero_poster.jpg",
+  "full": "video_full.mp4",
+  "w": 3456,
+  "h": 4608,
+  "dur": 16.1,
+  "title": "笔画回放 · 红茶会"
+ },
+ "cases": [
+  {
+   "file": "case_1279.jpg",
+   "video": "case_1279.mp4",
+   "w": 2560,
+   "h": 2560,
+   "dur": 18.1,
+   "title": "红妆 · 落花",
+   "tag": "古风人像",
+   "src_mb": 11.2
+  },
+  {
+   "file": "case_1256.jpg",
+   "video": "case_1256.mp4",
+   "w": 1920,
+   "h": 2560,
+   "dur": 16.1,
+   "title": "红茶会 · 粉发少女",
+   "tag": "人像插画",
+   "src_mb": 17.2
+  },
+  {
+   "file": "case_1244.jpg",
+   "video": "case_1244.mp4",
+   "w": 1728,
+   "h": 2304,
+   "dur": 17.0,
+   "title": "白无垢",
+   "tag": "和风人像",
+   "src_mb": 3.4
+  },
+  {
+   "file": "case_064.jpg",
+   "video": "case_064.mp4",
+   "w": 1789,
+   "h": 1440,
+   "dur": 18.0,
+   "title": "白裙 · 水彩",
+   "tag": "淡彩",
+   "src_mb": 2.0
+  },
+  {
+   "file": "case_1188.jpg",
+   "video": "case_1188.mp4",
+   "w": 1212,
+   "h": 1298,
+   "dur": 19.0,
+   "title": "蛇与少女",
+   "tag": "哥特线绘",
+   "src_mb": 1.5
+  }
+ ]
+}

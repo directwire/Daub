@@ -1,0 +1,49 @@
+daub — 确定性笔画渲染引擎
+Copyright (c) 2026 本仓库作者（下称「版权人」）
+
+──────────────────────────────────────────────────────────────────────
+English summary (non-authoritative): non-commercial use, study,
+modification and redistribution are freely granted; ANY commercial use
+requires prior written consent from the copyright holder. The vendored
+brush-tip data under tools/data/brush_tips/ is CC-0 and unaffected.
+The Chinese text below is the authoritative licence.
+──────────────────────────────────────────────────────────────────────
+
+一、许可授予
+
+在遵守本许可的前提下，任何人可以免费地为**非商业目的**使用、复制、
+学习、修改本软件及其源代码，并分发原件与修改件，包括：
+
+  1. 个人创作与日常使用；
+  2. 教学、学习、学术研究；
+  3. 修改与再分发（含开源项目内部集成），但须原样携带本许可，
+     且不得对任何人施加比本许可更严的限制。
+
+二、商业使用须另行取得书面授权
+
+任何**商业目的**的使用——包括但不限于：
+
+  1. 将本软件全部或部分集成到收费产品或商业服务中运行；
+  2. 在营利性组织的内部生产环节使用本软件；
+  3. 出售、出租、许可、分许可本软件，或围绕本软件提供付费服务；
+
+均须**事先取得版权人的书面授权**。授权渠道：通过本仓库（GitHub）
+联系仓库所有者。未获授权的商业使用属于侵权。
+
+三、第三方素材
+
+  - `tools/data/brush_tips/` 内的笔尖数据文件（.kpp）取自 Krita
+    官方默认资源包，授权为 CC-0，见
+    `tools/data/THIRD_PARTY_NOTICES.md`，不受本许可约束；
+  - `src/krita_srgb.icc` 为 Elle Stone 的 sRGB profile
+    （CC-BY-SA），仅作兼容性分发；
+  - 各自授权以对应声明文件为准。
+
+四、免责声明
+
+本软件按「现状」提供，不附带任何明示或默示的担保。在任何情况下，
+版权人均不对因使用本软件而产生的任何索赔、损害或其他责任负责。
+
+五、终止
+
+一旦违反本许可（尤其未获授权的商业使用），所获授权即告终止。

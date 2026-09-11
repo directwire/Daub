@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=daub_ai_draft
+X-Python-2-Compatible=false
+Name=daub AI 底稿重绘
+Comment=选一张 AI 底稿，daub 画坊用校准笔刷重绘并直接打开分层 .kra

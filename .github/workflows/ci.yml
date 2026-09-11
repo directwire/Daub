@@ -1,0 +1,68 @@
+# daub CI: every push builds and tests the engine on all mainstream
+# desktop targets; a v* tag attaches the binaries to a GitHub release.
+#
+# The renderer-only contract (tools/_check_render_only.py) runs on
+# Linux: it simulates a planner-free clone and proves the vendored
+# assets + renderer work out of the box.
+
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest     # x64
+            name: windows-x64
+            bin: daub.exe
+          - os: ubuntu-latest      # x64
+            name: linux-x64
+            bin: daub
+          - os: ubuntu-24.04-arm   # arm64
+            name: linux-arm64
+            bin: daub
+          - os: macos-15-intel     # Intel (macos-13 runners retired Dec 2025)
+            name: macos-x64
+            bin: daub
+          - os: macos-latest       # Apple Silicon
+            name: macos-arm64
+            bin: daub
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: build
+        run: cargo build --release
+      - name: test
+        run: cargo test --release
+      - name: renderer-only contract (planner-free clone simulation)
+        if: matrix.os == 'ubuntu-latest'
+        run: python3 tools/_check_render_only.py
+      - name: upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: daub-${{ matrix.name }}
+          path: target/release/${{ matrix.bin }}
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/**/*
+          generate_release_notes: true

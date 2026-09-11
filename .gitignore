@@ -1,0 +1,10 @@
+target/
+build/
+dist/
+pack_venv/
+__pycache__/
+*.spec
+dist_staging/
+web/_smoke/build/
+web_jobs/
+tools/web_showcase/video_full.mp4

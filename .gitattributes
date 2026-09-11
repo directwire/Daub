@@ -1,0 +1,5 @@
+# Linux 侧消费的部署文件强制 LF：Windows 的 core.autocrlf 会把
+# git archive 的产出也转成 CRLF，bash 脚本到服务器上直接 $'\r' 炸。
+*.sh text eol=lf
+*.service text eol=lf
+tools/deploy_175/nginx-daub.conf text eol=lf
